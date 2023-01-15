@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./shara\ desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+}
+.logocontainer{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.menu{
+    height: 30px;
+    width: 30px;
+}
+.container1{
+    display: flex;
+}
+.navcontainer{
+    height: 50px;
+    width: 400px;
+    margin-left: 700px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navcontainer a{
+    color: white;
+    text-decoration: none;
+}
+.saharatextcontainer{
+    width: 550px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 140px;
+}
+h1{
+    font-size: 90px;
+    color: white;
+}
+.saharatextcontainer p{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    line-height: 30px;
+}
+button{
+    height: 40px;
+    width: 170px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    border: 1px solid white;
+    font-family: serif;
+    font-weight: 600;
+}
+.container2{
+    display: flex;
+    gap: 70px;
+}
+.gridboxcontainer{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 220px 220px;
+    grid-template-rows: 230px 230px;
+    column-gap: 50px;
+    row-gap: 30px;
+    cursor: pointer;
+}
+.box{
+    width: 220px;
+    height: 230px;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    transition: 0.5s;
+}
+.box:hover{
+    transform: translateY(-5px);
+}
+.box1{
+    background-image: url(./pic-1.png);
+    background-size: cover;
+}
+.box2{
+    background-image: url(./pic-2.png);
+    background-size: cover;
+}
+.box3{
+    background-image: url(./pic-3.png);
+    background-size: cover;
+}
+.box4{
+    background-image: url(./pic-4.png);
+    background-size: cover;
+}
+h2{
+    font-size: medium;
+}
+.box p{
+    font-size: x-small;
+    line-height: 20px;
+}
+@media only screen and(min-width: 700px),(max-width: 856px){
+    body{
+        background-size: 856px 620px;
+        background-repeat: repeat;
+    }
+    .logo{
+        height: 50px;
+        width: 50px;
+    }
+    .navcontainer{
+        margin-left: 270px;
+    }
+    .saharatextcontainer{
+        margin-top: 2px;
+        width: 700px;
+        height: 240px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .container2{
+        display: block;
+    }
+    .gridboxcontainer{
+        height: 1000px;
+        margin: auto;
+        grid-template-columns: 500px;
+    }
+    .box{
+        width: 500px;
+        transition: 0.5s;
+    }
+    .box:hover{
+        transform: translateY(-5px);
+    }
+    .box1{
+        background-repeat: no-repeat;
+        background-size: 500px 350px;
+    }
+    .box2{
+        background-repeat: no-repeat;
+        background-size: 500px 350px; 
+    }
+    .box3{
+        background-repeat: no-repeat;
+        background-size: 500px 350px;
+    }
+    .box4{
+        background-repeat: no-repeat;
+        background-size: 500px 260px;
+    }
+    button{
+        width: 170px;
+        height: 40px;
+        font-family: serif;
+        border-radius: 30px;
+        font-weight: 600;
+    }
+}
+@media only screen and(min-width:250px),(max-width: 450px){
+    body{
+        background-size: 450px 562;
+    }
+    .logocontainer{
+        margin-left: 30px;
+    }
+    .navcontainer{
+        margin-left: 150px;
+        display: block;
+        position: relative;
+    }
+    a{
+        display: block;
+        line-height:25px;
+    }
+    .menu{
+        position: absolute;
+        bottom: 0px;
+        left: 90px;
+    }
+    .logo{
+        height: 70px;
+        width: 70px;
+    }
+    .container2{
+        display: block;
+    }
+    .saharatextcontainer{
+        margin-left: 30px;
+        width: 350px;
+        height: 300px;
+    }
+    .gridboxcontainer{
+        width: 280px;
+        height: 1150px;
+        grid-template-columns: 890px;
+        grid-template-rows: 290px;
+    }
+    .box{
+        width: 280px;
+        height: 290px;
+        transition: 0.5s;
+    }
+    .box:hover{
+        transform: translateY(-5px);
+    }
+    button{
+        width: 200px;
+        height: 48px;
+        font-size: medium;
+        font-weight: 600;
+        font-family: serif;
+        border-radius: 25px;
+    }
+}
